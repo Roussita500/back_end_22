@@ -3,7 +3,7 @@ const clasificacion = require('../model/delito.model');
 
 const getDelito = async (req, res) => {
     try {
-        const delitos = await clasificacion.find({}).limit(100); 
+        const delitos = await clasificacion.find({}).limit(500); 
         res.status(200).json(delitos);
     } catch (error) {
         res.status(500).json({ status: "error: " + error.message });
