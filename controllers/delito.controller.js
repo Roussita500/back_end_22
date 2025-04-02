@@ -55,7 +55,7 @@ const updateDelito = async(req, res) => {
 
         }
 
-        res.status(200).json(updateDelito);
+        res.status(200).json(req.body);
 
     } catch (error) {
         res.status(500).json({
